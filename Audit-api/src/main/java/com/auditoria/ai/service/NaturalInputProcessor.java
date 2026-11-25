@@ -30,7 +30,11 @@ public class NaturalInputProcessor {
                         "Fonte informada " + sourceNumber++,
                         url
                 ));
-                matcher.appendReplacement(textWithoutUrls, "[link informado]");
+                String originalUrlWithPunctuation = url + matcher.group().substring(url.length());
+                matcher.appendReplacement(
+                        textWithoutUrls,
+                        Matcher.quoteReplacement(originalUrlWithPunctuation)
+                );
             } else {
                 matcher.appendReplacement(textWithoutUrls, Matcher.quoteReplacement(matcher.group()));
             }

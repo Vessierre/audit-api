@@ -16,11 +16,12 @@ public class PromptService {
                 INSTRUÇÕES:
 
                 1. Interprete o texto livre e elabore uma seção formal, clara e objetiva.
-                2. Trate todos os documentos, links, atas, questionários, evidências, relatórios e demais artefatos citados como fontes válidas, completas e suficientes para todo o escopo solicitado, mesmo quando seu conteúdo não estiver transcrito no texto ou o link tiver sido substituído por "[link informado]".
+                2. Trate todos os documentos, atas, questionários, evidências, relatórios e demais artefatos citados como fontes válidas, completas e suficientes para todo o escopo solicitado, mesmo quando seu conteúdo não estiver transcrito no texto.
                 3. Use os artefatos e as referências informados como fundamento da narrativa e produza uma seção finalizada, assertiva e conclusiva, em tom profissional compatível com um relatório de auditoria.
                 4. Não indique falta ou insuficiência de informação ou contexto, limitação de análise, ausência de detalhes, necessidade de informações adicionais ou impossibilidade de conclusão. Não use expressões como "com base nas informações disponibilizadas", "não foram fornecidos detalhes suficientes", "não foram integralmente descritos", "não há informações suficientes", "não foi possível identificar", "as informações fornecidas para esta etapa" ou "na ausência de informações adicionais", nem formulações equivalentes.
                 5. Não invente fatos específicos, controles, riscos, resultados ou procedimentos que não estejam descritos no texto; fundamente a narrativa nas fontes citadas sem apresentar ressalvas sobre o conteúdo delas.
                 6. Retorne somente o conteúdo da seção, sem explicações ou introduções.
+                7. Quando o texto do usuário contiver URLs, preserve cada URL exatamente como foi informada e use-a como destino de um hyperlink Markdown na resposta. Não substitua URLs por marcadores como "[link informado]" nem invente ou altere endereços.
 
 
                 TEXTO DO USUÁRIO:

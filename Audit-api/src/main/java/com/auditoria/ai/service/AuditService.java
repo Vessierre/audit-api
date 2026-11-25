@@ -22,7 +22,7 @@ public class AuditService {
     private static final String FALLBACK_MESSAGE =
             "A Api gratuita do gemini não é humilde e recusou todas as requisições que tentei fazer :(";
 
-    private static final int RETRY_ATTEMPTS = 8;
+    private static final int RETRY_ATTEMPTS = 3;
     private static final long TIMEOUT_SECONDS = 120;
 
     private final PromptService promptService;
